@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python2.7
 import requests, sys, threading, time, os, random
 from random import randint
 CheckVersion = str(sys.version)
@@ -19,27 +19,16 @@ class InstaBrute(object):
     def __init__(self):
         self.cls()
         self.print_logo()
-        if '3.' in CheckVersion:
-            try:
-                Combo = input(' Combo.txt --> ')
-                Proxy = input(' Proxy.txt --> ')
-                self.cls()
-                self.print_logo()
-            except:
-                print('  [-] Error : SomeThing Not true!')
-                sys.exit()
-        else:
-            try:
-                Combo = raw_input(' Combo.txt --> ')
-                Proxy = raw_input(' Proxy.txt --> ')
-                self.cls()
-                self.print_logo()
-            except:
-                self.cls()
-                self.print_logo()
-                print('  [-] Error : SomeThing Not true!')
-                sys.exit()
-
+        try:
+            Combo = raw_input(' Combo.txt --> ')
+            Proxy = raw_input(' Proxy.txt --> ')
+            self.cls()
+            self.print_logo()
+        except:
+            self.cls()
+            self.print_logo()
+            print('  [-] Error : SomeThing Not true!')
+            sys.exit()
 
         self.proxylist = list(open(Proxy).read().splitlines())
         with open(Combo, 'r') as x:
