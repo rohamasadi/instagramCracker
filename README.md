@@ -7,3 +7,6 @@
 <br>
 
 <br>
+
+- very fast!
+- work with proxylist
