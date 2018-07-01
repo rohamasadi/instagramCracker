@@ -28,7 +28,7 @@ class InstaBrute(object):
             except:
                 print('  [-] Error : SomeThing Not true!')
                 sys.exit()
-        elif '2.' in CheckVersion:
+        else:
             try:
                 Combo = raw_input(' Combo.txt --> ')
                 Proxy = raw_input(' Proxy.txt --> ')
@@ -39,11 +39,7 @@ class InstaBrute(object):
                 self.print_logo()
                 print('  [-] Error : SomeThing Not true!')
                 sys.exit()
-        else:
-            self.cls()
-            self.print_logo()
-            print(' Unknown Python Version!')
-            sys.exit()
+
 
         self.proxylist = list(open(Proxy).read().splitlines())
         with open(Combo, 'r') as x:
