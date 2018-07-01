@@ -10,3 +10,4 @@
 
 - very fast!
 - work with proxylist
+- only work on python2.7
