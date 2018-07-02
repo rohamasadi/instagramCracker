@@ -48,7 +48,7 @@ class InstaBrute(object):
 
                 t.start()
                 thread.append(t)
-                time.sleep(0.02)
+                time.sleep(0.1)
             except:
                 pass
         for j in thread:
