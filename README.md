@@ -3,7 +3,7 @@
 <br>
 
 
-[![Watch the video](https://raw.githubusercontent.com/04x/instagramCracker/master/w.PNG)](https://www.aparat.com/v/IGX4i)
+[![Watch the video](https://raw.githubusercontent.com/04x/instagramCracker/master/screen.PNG)](https://www.aparat.com/v/IGX4i)
 <br>
 
 <br>
